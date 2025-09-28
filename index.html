@@ -75,18 +75,21 @@
             display: block;
             border: 1px solid #ccc;
             border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
         }
         .contact button {
             background: #ff9800;
             color: white;
             border: none;
             padding: 12px 25px;
+            font-family: 'Poppins', sans-serif;
             font-size: 1em;
             border-radius: 4px;
             cursor: pointer;
         }
         .contact button:hover {
             background: #e68900;
+            font-family: 'Poppins', sans-serif;
         }
         footer {
             background: #ff9800;
@@ -94,6 +97,7 @@
             text-align: center;
             padding: 15px 0;
             margin-top: 30px;
+            font-family: 'Poppins', sans-serif;
         }
         @media (max-width: 600px) {
             .card {
@@ -162,8 +166,8 @@
         <form action="mailto:contacto@zumi-to.es" method="post" enctype="text/plain">
             <input type="text" name="nombre" placeholder="Tu nombre" required>
             <input type="email" name="correo" placeholder="Tu correo" required>
-            <input type="tel" name="telefono" placeholder="Tu número de teléfono">
-            <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea"></textarea>
+            <input type="tel" name="telefono" placeholder="Tu número de teléfono" required>
+            <textarea name="mensaje" rows="5" placeholder= ></textarea>
             <button type="submit">Enviar mensaje</button>
         </form>
     </section>
