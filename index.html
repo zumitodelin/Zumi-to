@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zumi-to | Zumo de Naranja 100% Natural</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fffaf2;
+        }
+        header {
+            background: #ff9800;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #e65100;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .benefits, .locations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 280px;
+            text-align: center;
+        }
+        .card h3 {
+            color: #ff9800;
+            margin-bottom: 10px;
+        }
+        .contact {
+            background: #ffe0b2;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .contact input, .contact textarea {
+            width: 90%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px auto;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact button {
+            background: #ff9800;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1em;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background: #e68900;
+        }
+        footer {
+            background: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Zumi-to</h1>
+    <p>Zumo de naranja recién exprimido, 100% natural</p>
+</header>
+
+<div class="container">
+
+    <!-- Sección de beneficios -->
+    <section>
+        <h2>¿Por qué elegir Zumi-to?</h2>
+        <div class="benefits">
+            <div class="card">
+                <h3>Disponible 24/7</h3>
+                <p>Nuestras máquinas ofrecen zumo fresco en cualquier momento del día.</p>
+            </div>
+            <div class="card">
+                <h3>100% Natural</h3>
+                <p>Solo naranjas recién exprimidas, sin azúcares añadidos ni conservantes.</p>
+            </div>
+            <div class="card">
+                <h3>Opción Saludable</h3>
+                <p>Ofrece a clientes, empleados o estudiantes una alternativa nutritiva y deliciosa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lugares ideales -->
+    <section>
+        <h2>¿Dónde encaja Zumi-to?</h2>
+        <div class="locations">
+            <div class="card"><h3>Oficinas</h3></div>
+            <div class="card"><h3>Clubs de pádel o tenis</h3></div>
+            <div class="card"><h3>Gimnasios</h3></div>
+            <div class="card"><h3>Universidades y colegios</h3></div>
+            <div class="card"><h3>Centros deportivos</h3></div>
+        </div>
+    </section>
+
+    <!-- Condiciones -->
+    <section>
+        <h2>Condiciones de colaboración</h2>
+        <p style="text-align:center; max-width:700px; margin: 0 auto;">
+            En Zumi-to nos encargamos de la instalación, mantenimiento y reposición de las naranjas.
+            Tú solo necesitas el espacio y las ganas de ofrecer una experiencia saludable a tus visitantes.
+        </p>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact">
+        <h2>Contáctanos</h2>
+        <p>¿Interesado en instalar una máquina Zumi-to? Escríbenos:</p>
+        <form action="mailto:tucorreo@ejemplo.com" method="post" enctype="text/plain">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="correo" placeholder="Tu correo" required>
+            <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea"></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2025 Zumi-to | Zumo natural 24/7
+</footer>
+
+</body>
+</html>
