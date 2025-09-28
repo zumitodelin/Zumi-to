@@ -60,6 +60,41 @@
             color: #ff9800;
             margin-bottom: 10px;
         }
+        .collaboration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.collaboration .card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.collaboration .card h3 {
+    color: #ff9800;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.collaboration .card p {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .collaboration .card {
+        width: 90%;
+    }
+}
         .contact {
     background: #ffe0b2;
     padding: 30px 20px;
@@ -162,21 +197,29 @@
         <h2>¿Dónde encaja Zumi-to?</h2>
         <div class="locations">
             <div class="card"><h3>Oficinas</h3></div>
-            <div class="card"><h3>Clubs de pádel o tenis</h3></div>
-            <div class="card"><h3>Gimnasios</h3></div>
+            <div class="card"><h3>Clubs de pádel y gimnasios</h3></div>
+            <div class="card"><h3>Supermercados y fruterias</h3></div>
             <div class="card"><h3>Universidades y colegios</h3></div>
             <div class="card"><h3>Lugares con mucho tráfico</h3></div>
         </div>
     </section>
-
-    <!-- Condiciones -->
-    <section>
-        <h2>Condiciones de colaboración</h2>
-        <p style="text-align:center; max-width:700px; margin: 0 auto;">
-            En Zumi-to nos encargamos de la instalación, mantenimiento y reposición de las naranjas.
-            Tú solo necesitas poner el espacio, la corriente eléctrica y las ganas de ofrecer una experiencia saludable a tus visitantes.
-        </p>
-    </section>
+    
+    <h2>Formas de Colaborar con Zumi-to</h2>
+    <div class="collaboration">
+        <div class="card">
+            <h3>Alquiler del espacio + % de ventas</h3>
+            <p>Nos alquilas el espacio y compartimos un porcentaje de las ventas contigo o una renta fija. Nosotros nos encargamos de todo: instalación, mantenimiento y reposición de naranjas.</p>
+        </div>
+        <div class="card">
+            <h3>Alquiler de máquina</h3>
+            <p>Alquilas nuestras máquinas y te encargas de la operación diaria. Ideal para fruterías y supermercados que quieran ofrecer zumo fresco sin invertir en la máquina completa.</p>
+        </div>
+        <div class="card">
+            <h3>Compra de máquina + mantenimiento</h3>
+            <p>Compras la máquina y tienes la opción de contratar nuestro servicio de mantenimiento, para asegurarte de que siempre funcione perfectamente y tus clientes disfruten de zumo fresco.</p>
+        </div>
+    </div>
+</section>
 
     <!-- Contacto -->
   <section class="contact">
