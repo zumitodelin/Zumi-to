@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -120,20 +121,7 @@
     .benefits-list {
         text-align: center;
     }
-    
-.locations-section {
-    background: #fc6500;      /* ✅ Fondo naranja vibrante */
-    padding: 40px 0;          /* Espacio arriba y abajo */
-    border-radius: 8px;       /* Opcional: esquinas suaves */
 }
-    .locations-section h2 {
-    color: #ffffff; /* Título en blanco para contraste */
-}
-
-.locations-section .card {
-    background: #fff5ee; /* Mantén las cards claras para que resalten */
-}
-    
    .collaboration-columns {
     display: flex;
     justify-content: space-between;
@@ -252,7 +240,12 @@
         width: 100%;
     }
 }
-
+.locations-section {
+    background: #fc6500;      /* ✅ Fondo naranja vibrante */
+    padding: 40px 0;          /* Espacio arriba y abajo */
+    border-radius: 8px;       /* Opcional: esquinas suaves */
+    }
+}
 footer {
     background: #ff6600;       /* Fondo blanco */
     color: white;            /* Texto del color del header */
@@ -261,8 +254,6 @@ footer {
     margin-top: 25px;
     font-family: 'Poppins', sans-serif;
     font-size: 0.95em;         /* Opcional: texto un poquito más pequeño */
-    width: 100%;               /* ✅ Ocupa todo el ancho */
-    box-sizing: border-box;    /* Incluye padding dentro del ancho */
 }
 }
 </style>
@@ -305,7 +296,7 @@ footer {
 </section>
 
     <!-- Lugares ideales -->
-    <section class= "location-section">
+    <section>
         <h2>¿Dónde encaja Zumi-to?</h2>
         <div class="locations">
             <div class="card"><h3>Oficinas</h3></div>
@@ -316,21 +307,14 @@ footer {
         </div>
     </section>
     
- <section>
-    <h2>Formas de Colaborar con Zumi-to</h2>
-    <div class="collaboration-columns">
-        <div class="column">
-            <h3>Alquiler del espacio</h3>
-            <p>Nos alquilas el espacio y compartimos un porcentaje de las ventas contigo o una renta fija. Nosotros nos encargamos de todo.</p>
-        </div>
-        <div class="column">
-            <h3>Alquiler de máquina</h3>
-            <p>Alquilas nuestras máquinas y te encargas de la operación diaria. Ideal para fruterías y supermercados.</p>
-        </div>
-        <div class="column">
-            <h3>Compra de máquina</h3>
-            <p>Compras la máquina y tienes la opción de contratar nuestro servicio de mantenimiento.</p>
-        </div>
+<section class="locations-section">
+    <h2>¿Dónde encaja Zumi-to?</h2>
+    <div class="locations">
+        <div class="card"><h3>Oficinas</h3></div>
+        <div class="card"><h3>Clubs de deporte y gimnasios</h3></div>
+        <div class="card"><h3>Supermercados y fruterías</h3></div>
+        <div class="card"><h3>Universidades y colegios</h3></div>
+        <div class="card"><h3>Lugares con mucho tráfico</h3></div>
     </div>
 </section>
 
