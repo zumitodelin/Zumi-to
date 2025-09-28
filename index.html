@@ -7,68 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zumi-to | Zumo de Naranja 100% Natural</title>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #ffae4d;
-        }
-        header {
-            background: #ff6600;
-            color: white;
-            padding: 0px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-        }
-        .container {
-            width: 95%;
-            max-width: 1200px;
-            margin: 30px auto;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        .benefits, .locations {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .card {
-            background: #fff5ee;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            width: 280px;
-            text-align: center;
-            font-family: 'Poppins', sans-serif;
-        }
-        .card h3 {
-            color: #ff9800;
-            margin-bottom: 10px;
-        }
+       body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #ffae4d;
+}
 
-    .benefits-row {
+header {
+    background: #ff6600;
+    color: white;
+    padding: 0px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Beneficios con imagen a la izquierda */
+.benefits-row {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* ← Añadimos esto */
+    justify-content: space-between;
     gap: 30px;
     margin-bottom: 40px;
-    flex-wrap: wrap; /* Para que se adapte a móviles */
+    flex-wrap: wrap;
 }
 
 .machine-image img {
@@ -80,7 +68,7 @@
 }
 
 .benefits-list {
-    flex: 1;             
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -90,17 +78,16 @@
 .benefits-list .card {
     background: #fff5ee;
     border-radius: 8px;
-    padding: 12px 25px;   /* ↓ Menos padding vertical */
+    padding: 12px 25px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     text-align: left;
-    width: 100%;          /* ↑ Ocupa todo el ancho disponible */
-    max-width: 650px;     /* ↑ Puedes aumentar a 700px si quieres aún más largo */
-    min-height: auto;     /* ↓ Deja que la altura se adapte al contenido */
+    width: 100%;
+    max-width: 650px;
 }
 
 .benefits-list .card h3 {
     color: #ff9800;
-    margin-bottom: 6px;   /* ↓ Menos espacio entre título y texto */
+    margin-bottom: 6px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -108,10 +95,10 @@
     font-family: 'Poppins', sans-serif;
     color: #333;
     font-size: 0.95em;
-    line-height: 1.4;     /* ↓ Reduce el interlineado para menor altura */
+    line-height: 1.4;
 }
 
-/* Adaptación para móviles */
+/* Responsive beneficios */
 @media (max-width: 900px) {
     .benefits-row {
         flex-direction: column;
@@ -122,7 +109,33 @@
         text-align: center;
     }
 }
-   .collaboration-columns {
+
+/* Locations */
+.locations-section {
+    background: #ff8533;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.locations .card {
+    flex: 1 1 280px;
+    max-width: 300px;
+    text-align: center;
+    background: #fff5ee;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Colaboración */
+.collaboration-columns {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -135,12 +148,12 @@
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     flex: 1;
-    min-width: 250px; /* asegura que no sean demasiado estrechas */
+    min-width: 250px;
     text-align: center;
 }
 
 .collaboration-columns .column h3 {
-    color:#ff8b3f;
+    color: #ff8b3f;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
 }
@@ -159,6 +172,7 @@
     }
 }
 
+/* Contacto */
 .contact {
     background: #ffe0b2;
     padding: 30px 20px;
@@ -180,20 +194,18 @@
     margin-bottom: 15px;
 }
 
-/* Formulario centrado dentro del box */
 .contact form {
-    max-width: 500px;      /* Ancho máximo del formulario */
+    max-width: 500px;
     width: 100%;
-    margin: 0 auto;        /* Centra el formulario en el box */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;   /* Asegura que los inputs se centren */
+    align-items: center;
 }
 
-/* Inputs y textarea ocupan el ancho del formulario */
 .contact input,
 .contact textarea {
-    width: 100%;           /* Ocupa el ancho del formulario */
+    width: 100%;
     padding: 12px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -203,7 +215,6 @@
     box-sizing: border-box;
 }
 
-/* Estilo al hacer foco */
 .contact input:focus,
 .contact textarea:focus {
     border-color: #ff9800;
@@ -211,7 +222,6 @@
     box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
 }
 
-/* Botón */
 .contact button {
     background: #ff9800;
     color: white;
@@ -229,97 +239,70 @@
     background: #e68900;
 }
 
-/* Responsive: en móviles ajustar anchura */
 @media (max-width: 600px) {
     .contact form {
         max-width: 95%;
     }
+}
 
-    .contact input,
-    .contact textarea {
-        width: 100%;
-    }
-}
-.locations-section {
-    background: #ff8533;      /* ✅ Fondo naranja vibrante */
-    width: 100%;              /* ✅ Ocupa todo el ancho de la página */
-    padding: 40px 0;          /* Espacio arriba y abajo */
-   
-    }
-.locations {
-    display: flex;
-    flex-wrap: wrap;       /* Permite que las cards bajen a la siguiente fila */
-    justify-content: center; /* Centra todas las filas horizontalmente */
-    gap: 20px;             /* Espacio entre cards */
-}
-}
+/* Footer */
 footer {
-    background: #ff6600;       /* Fondo blanco */
-    color: white;            /* Texto del color del header */
-    text-align: left;          /* Alineación a la izquierda */
-    padding: 25px 20px;        /* Espaciado interno (añadí un poco lateral) */
+    background: #ff6600;
+    color: white;
+    text-align: left;
+    padding: 25px 20px;
     margin-top: 25px;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.95em;         /* Opcional: texto un poquito más pequeño */
-    }
+    font-size: 0.95em;
 }
 </style>
 
-</head>
-<body>
-
 <header>
-     <img src="Logo.png" alt="Zumi-to Logo" style="max-width: 350px; height: auto; margin-bottom: 0px;">
-
+    <img src="Logo.png" alt="Zumi-to Logo" style="max-width: 350px; height: auto; margin-bottom: 0px;">
 </header>
 
 <div class="container">
 
-    <!-- Sección de beneficios -->
-   <section>
-    <h2>¿Por qué elegir Zumi-to?</h2>
-    <div class="benefits-row">
-        <!-- Imagen de la máquina -->
-        <div class="machine-image">
-            <img src="Máquina.jpg" alt="Máquina Zumi-to">
+    <!-- Beneficios -->
+    <section>
+        <h2>¿Por qué elegir Zumi-to?</h2>
+        <div class="benefits-row">
+            <div class="machine-image">
+                <img src="Máquina.jpg" alt="Máquina Zumi-to">
+            </div>
+            <div class="benefits-list">
+                <div class="card">
+                    <h3>Disponible 24/7</h3>
+                    <p>Nuestras máquinas ofrecen zumo fresco en cualquier momento del día.</p>
+                </div>
+                <div class="card">
+                    <h3>100% Natural</h3>
+                    <p>Solo naranjas recién exprimidas, sin azúcares añadidos ni conservantes.</p>
+                </div>
+                <div class="card">
+                    <h3>Opción Saludable</h3>
+                    <p>Ofrece a clientes, empleados o estudiantes una alternativa más saludable.</p>
+                </div>
+            </div>
         </div>
+    </section>
+</div>
 
-        <!-- Beneficios listados -->
-        <div class="benefits-list">
-            <div class="card">
-                <h3>Disponible 24/7</h3>
-                <p>Nuestras máquinas ofrecen zumo fresco en cualquier momento del día.</p>
-            </div>
-            <div class="card">
-                <h3>100% Natural</h3>
-                <p>Solo naranjas recién exprimidas, sin azúcares añadidos ni conservantes.</p>
-            </div>
-            <div class="card">
-                <h3>Opción Saludable</h3>
-                <p>Ofrece a clientes, empleados o estudiantes una alternativa más saludable.</p>
-            </div>
+<!-- Locations -->
+<section class="locations-section">
+    <div class="container">
+        <h2>¿Dónde encaja Zumi-to?</h2>
+        <div class="locations">
+            <div class="card"><h3>Oficinas</h3></div>
+            <div class="card"><h3>Clubs de deporte</h3></div>
+            <div class="card"><h3>Supermercados y fruterías</h3></div>
+            <div class="card"><h3>Universidades y colegios</h3></div>
+            <div class="card"><h3>Centros comerciales</h3></div>
+            <div class="card"><h3>Otros Lugares con tráfico</h3></div>
         </div>
     </div>
-</div> 
 </section>
-
-    <!-- Lugares ideales -->
-   <section class="locations-section">
-    <h2>¿Dónde encaja Zumi-to?</h2>
-    <div class="locations">
-        <div class="card"><h3>Oficinas</h3></div>
-        <div class="card"><h3>Clubs de deporte</h3></div>
-        <div class="card"><h3>Supermercados y fruterías</h3></div>
-        <div class="card"><h3>Universidades y colegios</h3></div>
-        <div class="card"><h3>Centros comerciales</h3></div>
-        <div class="card"><h3>Otros Lugares con tráfico</h3></div>
-      </div>
-   </div>
-  </section>
     
-
-</section>
-
 <!-- Sección de Contacto -->
 <section class="contact">
     <h2>Contáctanos</h2>
@@ -334,10 +317,10 @@ footer {
         <button type="submit">Enviar mensaje</button>
     </form>
 </section>
-    
+
+<!-- Footer -->
 <footer>
     &copy; 2025 Zumi-to | Frescura en cada traguito
 </footer>
-
 </body>
 </html>
