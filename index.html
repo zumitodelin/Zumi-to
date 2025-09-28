@@ -10,7 +10,7 @@
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #fffaf2;
+            background: linear-gradient(to right, #FFA500, #FFB347);
         }
         header {
             background: #ff9800;
@@ -152,21 +152,23 @@
     </section>
 
     <!-- Contacto -->
-    <section class="contact">
+   <section class="contact">
         <h2>Contáctanos</h2>
-        <p>¿Interesado en instalar una máquina Zumi-to? Escríbenos:</p>
-        <form action="mailto:tucorreo@ejemplo.com" method="post" enctype="text/plain">
+        <p>¿Interesado en instalar una máquina Zumi-to? Escríbenos o llámanos:</p>
+        <p><strong>Teléfono de contacto:</strong> +34 672144355</p> <!-- Tu número corporativo -->
+
+        <form action="mailto:contacto@zumi-to.es" method="post" enctype="text/plain">
             <input type="text" name="nombre" placeholder="Tu nombre" required>
             <input type="email" name="correo" placeholder="Tu correo" required>
+            <input type="tel" name="telefono" placeholder="Tu número de teléfono">
             <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea"></textarea>
             <button type="submit">Enviar mensaje</button>
         </form>
     </section>
-
 </div>
 
 <footer>
-    &copy; 2025 Zumi-to | Zumo natural 24/7
+    &copy; 2025 Zumi-to | Frescura en cada traguito
 </footer>
 
 </body>
