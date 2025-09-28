@@ -61,50 +61,71 @@
             margin-bottom: 10px;
         }
         .contact {
-            background: #ffe0b2;
-            font-family: 'Poppins', sans-serif;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .contact input, .contact textarea {
-            width: 90%;
-            max-width: 400px;
-            padding: 10px;
-            margin: 10px auto;
-            display: block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-family: 'Poppins', sans-serif;
-        }
-        .contact button {
-            background: #ff9800;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1em;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .contact button:hover {
-            background: #e68900;
-            font-family: 'Poppins', sans-serif;
-        }
-        footer {
-            background: #ff9800;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            margin-top: 30px;
-            font-family: 'Poppins', sans-serif;
-        }
-        @media (max-width: 600px) {
-            .card {
-                width: 90%;
-            }
-        }
-    </style>
+    background: #ffe0b2;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+}
+
+.contact h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #e65100;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact input,
+.contact textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #ff9800;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+
+.contact button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact button:hover {
+    background: #e68900;
+}
+
+@media (max-width: 600px) {
+    .contact input,
+    .contact textarea {
+        width: 95%;
+    }
+}
+</style>
+
 </head>
 <body>
 
@@ -158,19 +179,19 @@
     </section>
 
     <!-- Contacto -->
-   <section class="contact">
-        <h2>Contáctanos</h2>
-        <p>¿Interesado en instalar una máquina Zumi-to? Escríbenos o llámanos:</p>
-        <p><strong>Teléfono de contacto:</strong> +34 672144355</p> <!-- Tu número corporativo -->
+  <section class="contact">
+    <h2>Contáctanos</h2>
+    <p>¿Interesado en instalar una máquina Zumi-to? Escríbenos o llámanos:</p>
+    <p><strong>Teléfono de contacto:</strong> +34 600 123 456</p>
 
-        <form action="mailto:contacto@zumi-to.es" method="post" enctype="text/plain">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="correo" placeholder="Tu correo" required>
-            <input type="tel" name="telefono" placeholder="Tu número de teléfono" required>
-            <textarea name="mensaje" rows="5" placeholder= ></textarea>
-            <button type="submit">Enviar mensaje</button>
-        </form>
-    </section>
+    <form action="mailto:contacto@zumi-to.es" method="post" enctype="text/plain">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="correo" placeholder="Tu correo" required>
+        <input type="tel" name="telefono" placeholder="Tu número de teléfono" required>
+        <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea" required></textarea>
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</section>
 </div>
 
 <footer>
