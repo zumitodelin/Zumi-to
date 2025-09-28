@@ -173,15 +173,20 @@ h2 {
     }
 }
 
-/* Contacto */
+/* Sección de Contacto */
 .contact {
-    background: #ffe0b2;   /* color de fondo */
+    background: #ffe0b2;   /* fondo de toda la sección */
+    width: 100%;           /* ocupa todo el ancho de la pantalla */
     padding: 50px 20px;    /* espacio arriba/abajo y lateral */
-    text-align: center;
-    width: 100%;           /* ocupa todo el ancho */
+    margin: 0;             /* sin margen extra */
     border-radius: 0;      /* sin bordes redondeados */
-    margin: 0;             /* sin márgenes automáticos */
     box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-inner {
+    max-width: 700px;      /* limita el ancho del contenido */
+    margin: 0 auto;        /* centra el contenido */
 }
 
 .contact h2 {
@@ -196,18 +201,18 @@ h2 {
     margin-bottom: 15px;
 }
 
+/* Formulario centrado y responsive */
 .contact form {
-    max-width: 500px;
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .contact input,
 .contact textarea {
     width: 100%;
+    max-width: 500px;
     padding: 12px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -241,14 +246,15 @@ h2 {
     background: #e68900;
 }
 
-.contact-inner {
-    max-width: 700px;
-    margin: 0 auto;   /* centra el contenido dentro de la sección */
-}
-
+/* Responsive para móviles */
 @media (max-width: 600px) {
-    .contact form {
+    .contact-inner {
         max-width: 95%;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 100%;
     }
 }
 
