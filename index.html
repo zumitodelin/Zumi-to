@@ -120,6 +120,10 @@
     .benefits-list {
         text-align: center;
     }
+    .locations-section {
+    background: #fc6500;      /* ✅ Fondo naranja vibrante */
+    padding: 40px 0;          /* Espacio arriba y abajo */
+    border-radius: 8px;       /* Opcional: esquinas suaves */
 }
    .collaboration-columns {
     display: flex;
@@ -248,6 +252,8 @@ footer {
     margin-top: 25px;
     font-family: 'Poppins', sans-serif;
     font-size: 0.95em;         /* Opcional: texto un poquito más pequeño */
+    width: 100%;               /* ✅ Ocupa todo el ancho */
+    box-sizing: border-box;    /* Incluye padding dentro del ancho */
 }
 }
 </style>
@@ -290,7 +296,7 @@ footer {
 </section>
 
     <!-- Lugares ideales -->
-    <section>
+    <section class= "location-section">
         <h2>¿Dónde encaja Zumi-to?</h2>
         <div class="locations">
             <div class="card"><h3>Oficinas</h3></div>
