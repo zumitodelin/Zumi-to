@@ -158,7 +158,6 @@
     }
 }
 
-/* Contacto */
 .contact {
     background: #ffe0b2;
     padding: 30px 20px;
@@ -180,13 +179,17 @@
     margin-bottom: 15px;
 }
 
+/* Formulario centrado dentro del box */
 .contact form {
     max-width: 500px;      /* Ancho máximo del formulario */
-    margin: 0 auto;        /* ← Centra el formulario en el box */
+    width: 100%;
+    margin: 0 auto;        /* Centra el formulario en el box */
     display: flex;
     flex-direction: column;
     align-items: center;   /* Asegura que los inputs se centren */
-        
+}
+
+/* Inputs y textarea ocupan el ancho del formulario */
 .contact input,
 .contact textarea {
     width: 100%;           /* Ocupa el ancho del formulario */
@@ -197,7 +200,9 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     box-sizing: border-box;
+}
 
+/* Estilo al hacer foco */
 .contact input:focus,
 .contact textarea:focus {
     border-color: #ff9800;
@@ -205,6 +210,7 @@
     box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
 }
 
+/* Botón */
 .contact button {
     background: #ff9800;
     color: white;
@@ -222,11 +228,17 @@
     background: #e68900;
 }
 
+/* Responsive: en móviles ajustar anchura */
 @media (max-width: 600px) {
+    .contact form {
+        max-width: 95%;
+    }
+
     .contact input,
     .contact textarea {
-        width: 95%;
- }
+        width: 100%;
+    }
+}
 
 footer {
     background: #ff6600;
