@@ -112,7 +112,7 @@ h2 {
 
 /* Locations */
 .locations-section {
-    background: #fabc73;
+    background: #fac27f;
     width: 100%;
     padding: 40px 0;
 }
@@ -175,13 +175,13 @@ h2 {
 
 /* Contacto */
 .contact {
-    background: #ffe0b2;
-    padding: 50px 20px;
+    background: #ffe0b2;   /* color de fondo */
+    padding: 50px 20px;    /* espacio arriba/abajo y lateral */
     text-align: center;
-    width: 100%;
-    border-radius: 0;
+    width: 100%;           /* ocupa todo el ancho */
+    border-radius: 0;      /* sin bordes redondeados */
+    margin: 0;             /* sin márgenes automáticos */
     box-sizing: border-box;
-    margin: 0;
 }
 
 .contact h2 {
@@ -239,6 +239,11 @@ h2 {
 
 .contact button:hover {
     background: #e68900;
+}
+
+.contact-inner {
+    max-width: 700px;
+    margin: 0 auto;   /* centra el contenido dentro de la sección */
 }
 
 @media (max-width: 600px) {
@@ -307,6 +312,7 @@ footer {
     
 <!-- Sección de Contacto -->
 <section class="contact">
+  <div class="contact-inner">
     <h2>Contáctanos</h2>
     <p>¿Interesado en instalar una máquina Zumi-to? Escríbenos o llámanos:</p>
     <p><strong>Teléfono de contacto:</strong> +34 672144355</p>
@@ -318,6 +324,7 @@ footer {
         <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea" required></textarea>
         <button type="submit">Enviar mensaje</button>
     </form>
+  </div>
 </section>
 
 <!-- Footer -->
