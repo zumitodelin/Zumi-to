@@ -173,6 +173,13 @@ h2 {
     }
 }
 
+/* Tarjetas hover */
+.card:hover {
+    transform: translateY(-5px); /* se eleva un poco */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
 /* Sección de Contacto */
 .contact {
     background: #ffe0b2;   /* fondo de toda la sección */
@@ -243,9 +250,11 @@ h2 {
 }
 
 .contact button:hover {
-    background: #e68900;
+   background: #e68900; /* ligeramente más oscuro */
+    transform: scale(1.05); /* aumenta un poco */
+    transition: all 0.3s ease;
 }
-
+        
 /* Responsive para móviles */
 @media (max-width: 600px) {
     .contact-inner {
