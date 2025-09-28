@@ -139,7 +139,7 @@
 }
 
 .collaboration-columns .column h3 {
-    color:#ff9800;
+    color:#ff8b3f;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
 }
@@ -180,19 +180,23 @@
     margin-bottom: 15px;
 }
 
+.contact form {
+    max-width: 500px;      /* Ancho máximo del formulario */
+    margin: 0 auto;        /* ← Centra el formulario en el box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Asegura que los inputs se centren */
+        
 .contact input,
 .contact textarea {
-    width: 90%;
-    max-width: 500px;
+    width: 100%;           /* Ocupa el ancho del formulario */
     padding: 12px;
     margin: 10px 0;
-    display: block;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     box-sizing: border-box;
-}
 
 .contact input:focus,
 .contact textarea:focus {
@@ -211,6 +215,7 @@
     cursor: pointer;
     transition: background 0.3s;
     font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
 }
 
 .contact button:hover {
@@ -305,7 +310,7 @@ footer {
 <section class="contact">
     <h2>Contáctanos</h2>
     <p>¿Interesado en instalar una máquina Zumi-to? Escríbenos o llámanos:</p>
-    <p><strong>Teléfono de contacto:</strong> +34 600 123 456</p>
+    <p><strong>Teléfono de contacto:</strong> +34 672144355</p>
 
     <form action="mailto:contacto@zumi-to.es" method="post" enctype="text/plain">
         <input type="text" name="nombre" placeholder="Tu nombre" required>
