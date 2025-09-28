@@ -89,14 +89,17 @@
 .benefits-list .card {
     background: #fff5ee;
     border-radius: 8px;
-    padding: 15px 20px;
+    padding: 12px 25px;   /* ↓ Menos padding vertical */
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: left; /* Mejor lectura en columna */
+    text-align: left;
+    width: 100%;          /* ↑ Ocupa todo el ancho disponible */
+    max-width: 650px;     /* ↑ Puedes aumentar a 700px si quieres aún más largo */
+    min-height: auto;     /* ↓ Deja que la altura se adapte al contenido */
 }
 
 .benefits-list .card h3 {
     color: #ff9800;
-    margin-bottom: 8px;
+    margin-bottom: 6px;   /* ↓ Menos espacio entre título y texto */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -104,7 +107,7 @@
     font-family: 'Roboto', sans-serif;
     color: #333;
     font-size: 0.95em;
-    line-height: 1.5;
+    line-height: 1.4;     /* ↓ Reduce el interlineado para menor altura */
 }
 
 /* Adaptación para móviles */
@@ -273,7 +276,7 @@ footer {
         <h2>¿Dónde encaja Zumi-to?</h2>
         <div class="locations">
             <div class="card"><h3>Oficinas</h3></div>
-            <div class="card"><h3>Clubs de pádel y gimnasios</h3></div>
+            <div class="card"><h3>Clubs de deporte y gimnasios</h3></div>
             <div class="card"><h3>Supermercados y fruterias</h3></div>
             <div class="card"><h3>Universidades y colegios</h3></div>
             <div class="card"><h3>Lugares con mucho tráfico</h3></div>
