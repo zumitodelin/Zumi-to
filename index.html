@@ -60,41 +60,45 @@
             color: #ff9800;
             margin-bottom: 10px;
         }
+   .collaboration-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.collaboration-columns .column {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 250px; /* asegura que no sean demasiado estrechas */
+    text-align: center;
+}
+
+.collaboration-columns .column h3 {
+    color: #ff9800;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.collaboration-columns .column p {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+@media (max-width: 900px) {
     .collaboration-columns {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         gap: 20px;
-        margin-bottom: 40px;
+    }
 }
 
-    .collaboration-columns .column {
-        background: white;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        flex: 1; 
-        text-align: center;
-}
-
-    .collaboration-columns .column h3 {
-        color: #fff5ee;
-        margin-bottom: 10px;
-        font-family: 'Poppins', sans-serif;
-}
-
-    .collaboration-columns .column p {
-        font-family: 'Roboto', sans-serif;
-        color: #333;
-        font-size: 0.95em;
-        line-height: 1.5;
-}
-
-    @media (max-width: 900px) {
-        .collaboration-columns {
-            flex-direction: column;
-            gap: 20px;
-}
-        .contact {
+/* Contacto */
+.contact {
     background: #ffe0b2;
     padding: 30px 20px;
     border-radius: 12px;
@@ -157,14 +161,6 @@
     .contact textarea {
         width: 95%;
     }
-  footer {
-    background: #ff6600;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
-    font-family: 'Poppins', sans-serif;
-}
 }
 </style>
 
@@ -212,6 +208,7 @@
         </div>
     </section>
     
+ <section>
     <h2>Formas de Colaborar con Zumi-to</h2>
     <div class="collaboration-columns">
         <div class="column">
@@ -226,10 +223,11 @@
             <h3>Compra de máquina</h3>
             <p>Compras la máquina y tienes la opción de contratar nuestro servicio de mantenimiento.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contacto -->
-  <section class="contact">
+<!-- Sección de Contacto -->
+<section class="contact">
     <h2>Contáctanos</h2>
     <p>¿Interesado en instalar una máquina Zumi-to? Escríbenos o llámanos:</p>
     <p><strong>Teléfono de contacto:</strong> +34 600 123 456</p>
@@ -242,8 +240,7 @@
         <button type="submit">Enviar mensaje</button>
     </form>
 </section>
-</div>
-
+    
 <footer>
     &copy; 2025 Zumi-to | Frescura en cada traguito
 </footer>
