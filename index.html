@@ -277,7 +277,7 @@
         <h2>¿Por qué elegir Zumi-to?</h2>
         <div class="benefits-row">
             <div class="machine-image">
-                <img src="Máquina con logo.png" alt="Máquina Zumi-to">
+                <img src="Máquina.jpg" alt="Máquina Zumi-to">
             </div>
             <div class="benefits-list">
                 <div class="card">
@@ -309,23 +309,36 @@
         </div>
     </section>
 
- <form action="https://formsubmit.co/contacto@zumi-to.es" method="POST">
-    <input type="text" name="nombre" placeholder="Tu nombre" required>
-    <input type="email" name="correo" placeholder="Tu correo" required>
-    <input type="tel" name="telefono" placeholder="Tu número de teléfono" required>
-    <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea" required></textarea>
-    
-    <!-- Evita spam -->
-    <input type="hidden" name="_captcha" value="false">
-    
-    <!-- Redirección tras enviar -->
-    <input type="hidden" name="_next" value="https://zumi-to.com/gracias.html">
-    
-    <button type="submit">Enviar mensaje</button>
-</form>
+<!-- Sección de Contacto -->
+<section class="contact">
+  <div class="contact-inner">
+    <h2>Contáctanos</h2>
+    <p>¿Interesado en instalar una máquina Zumi-to? Escríbenos o llámanos:</p>
+    <p><strong>Teléfono de contacto:</strong> +34 672144355</p>
+
+    <!-- FORMULARIO: FormSubmit -->
+    <form action="https://formsubmit.co/contacto@zumi-to.es" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="correo" placeholder="Tu correo" required>
+        <input type="tel" name="telefono" placeholder="Tu número de teléfono" required>
+        <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea" required></textarea>
+
+        <!-- Opcionales -->
+        <input type="hidden" name="_captcha" value="false"> 
+        <!-- redirige a la página de agradecimiento tras enviar -->
+        <input type="hidden" name="_next" value="https://www.zumi-to.com/gracias.html">
+
+        <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <!-- Mensaje local (se mostrará solo si usas JS), por ahora lo dejamos oculto -->
+    <p id="formMessage" style="color:green; display:none; margin-top:10px;">¡Gracias! Tu mensaje ha sido enviado.</p>
+  </div>
+</section>
 
 <footer>
-    &copy; 2025 Zumi-to | Frescura en cada traguito
+  &copy; 2025 Zumi-to | Frescura en cada traguito  
+  <br><a href="privacidad.html">Política de Privacidad</a>
 </footer>
 
 <script>
