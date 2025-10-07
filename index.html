@@ -277,7 +277,7 @@
         <h2>¿Por qué elegir Zumi-to?</h2>
         <div class="benefits-row">
             <div class="machine-image">
-                <img src="Máquina.jpg" alt="Máquina Zumi-to">
+                <img src="Máquina con logo.png" alt="Máquina Zumi-to">
             </div>
             <div class="benefits-list">
                 <div class="card">
@@ -309,25 +309,20 @@
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section class="contact">
-        <div class="contact-inner">
-            <h2>Contáctanos</h2>
-            <p>¿Interesado en instalar una máquina Zumi-to? Escríbenos o llámanos:</p>
-            <p><strong>Teléfono de contacto:</strong> +34 672144355</p>
-
-            <form onsubmit="return sendForm(event)" action="mailto:contacto@zumi-to.es" method="post" enctype="text/plain">
-                <input type="text" name="nombre" placeholder="Tu nombre" required>
-                <input type="email" name="correo" placeholder="Tu correo" required>
-                <input type="tel" name="telefono" placeholder="Tu número de teléfono" required>
-                <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea" required></textarea>
-                <button type="submit">Enviar mensaje</button>
-                <p id="formMessage" style="color:green; display:none; margin-top:10px;">¡Gracias! Tu mensaje ha sido enviado.</p>
-            </form>
-        </div>
-    </section>
-
-</div>
+ <form action="https://formsubmit.co/contacto@zumi-to.es" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="correo" placeholder="Tu correo" required>
+    <input type="tel" name="telefono" placeholder="Tu número de teléfono" required>
+    <textarea name="mensaje" rows="5" placeholder="Cuéntanos tu idea" required></textarea>
+    
+    <!-- Evita spam -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Redirección tras enviar -->
+    <input type="hidden" name="_next" value="https://zumi-to.com/gracias.html">
+    
+    <button type="submit">Enviar mensaje</button>
+</form>
 
 <footer>
     &copy; 2025 Zumi-to | Frescura en cada traguito
