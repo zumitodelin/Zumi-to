@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gracias | Zumi-to</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { margin:0; font-family: 'Roboto', sans-serif; background:#fff5ee; color:#333; }
+    header { background:#ff6600; color:#fff; padding:18px 0; text-align:center; }
+    h1 { font-family:'Poppins',sans-serif; margin:0; }
+    .container { max-width:800px; margin:60px auto; padding:0 20px; text-align:center; }
+    .btn { display:inline-block; margin-top:24px; background:#ff9800; color:#fff; padding:10px 18px; border-radius:6px; text-decoration:none; font-family:'Poppins',sans-serif; }
+    footer { background:#ff6600; color:#fff; padding:18px 20px; text-align:left; margin-top:60px; }
+  </style>
+</head>
+<body>
+  <header><h1>Zumi-to</h1></header>
+  <div class="container">
+    <h2>¡Gracias!</h2>
+    <p>Tu mensaje se ha enviado correctamente. En breve nos pondremos en contacto contigo.</p>
+    <a class="btn" href="https://www.zumi-to.com">Volver a la web</a>
+  </div>
+  <footer>&copy; 2025 Zumi-to | Frescura en cada traguito</footer>
+</body>
+</html>
